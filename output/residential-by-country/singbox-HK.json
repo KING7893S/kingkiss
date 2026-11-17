@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "112.49.65.212",
-      "server_port": 18000,
-      "password": "3b985d60-e252-4935-8e03-06afeb1144c9",
+      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "www.biliimg.com",
-        "insecure": true
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
       }
     },
     {

@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 112.49.65.212
-  port: 18000
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
+  port: 443
   udp: true
-  type: trojan
-  password: 3b985d60-e252-4935-8e03-06afeb1144c9
-  sni: www.biliimg.com
-  skip-cert-verify: true
+  type: vless
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
