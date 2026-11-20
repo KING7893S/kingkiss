@@ -12,14 +12,28 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: creator.morteza1388m1122.ir
-  port: 29206
+  server: 88.216.214.159
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fQUUCljoCc
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 138.199.55.230
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -29,19 +43,8 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   udp: true
   type: vmess
@@ -60,7 +63,7 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
@@ -73,17 +76,6 @@ proxies:
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: lodizu.hagrid-connected.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: beda6bd0-7ce4-477a-91f1-860d018dbfcb
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lodizu.hagrid-connected.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
   server: subgift.gcorecdn.com
   port: 443
   udp: true
@@ -95,45 +87,6 @@ proxies:
   network: ws
   ws-opts:
     path: /t.me-SubGift
-- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  server: 37.9.4.62
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  tls: true
-  reality-opts:
-    public-key: vP4XeQ-z8LYtkSz1SCAxRMAEPreaHspoXm2nt0okQVw
-    short-id: c7674e
-  servername: 360.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
-  server: 88.216.214.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
-  server: 88.216.60.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,10 +100,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,9 +113,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
 rules:
 - MATCH,PROXIES
