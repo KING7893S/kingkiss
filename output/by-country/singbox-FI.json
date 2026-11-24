@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "2.29.210.28",
-      "server_port": 25565,
-      "method": "chacha20-ietf-poly1305",
-      "password": "C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc"
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "94.183.164.119",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -23,7 +27,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -33,29 +37,31 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
-      "tls": {
-        "enabled": true,
-        "server_name": "94.183.164.119",
-        "insecure": true
-      }
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "31.76.3.52",
+      "server_port": 443,
+      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "payablemeta.cleanfoodshop.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
+        "path": "/media/ws/"
       }
     },
     {
