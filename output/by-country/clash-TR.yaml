@@ -5,23 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 38.180.104.37
-  port: 19084
+  server: 107.181.155.27
+  port: 2089
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: ff4d354078394558933d699be149ad69
+  cipher: chacha20-ietf-poly1305
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  udp: true
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: v2new.nimbaha9.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
