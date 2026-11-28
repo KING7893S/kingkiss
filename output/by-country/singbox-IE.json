@@ -6,16 +6,8 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "3.248.201.197",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "146.70.90.196",
-      "server_port": 17454,
+      "server": "146.70.90.195",
+      "server_port": 17453,
       "method": "aes-128-gcm",
       "password": "cVCf+5/dBI353UY4YcN3nS05znsJYtLF"
     },
@@ -24,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

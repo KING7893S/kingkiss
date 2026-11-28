@@ -13,7 +13,7 @@ proxies:
   sni: 94.183.164.119
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: mail1.besttotaldns.com
+  server: 65.109.171.194
   port: 443
   udp: true
   type: vless
@@ -24,30 +24,28 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 31.76.77.231
+  server: 2.27.122.255
   port: 443
   udp: true
   type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  uuid: e307f400-d65e-4afd-bfe2-9a54deca5678
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
-    short-id: cc85fc7134024405
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: Uig-31Ux76EreEvx8Ntb0BwS1TkUGbu0LcsQsiAH6wg
+    short-id: d52d3ecf49447c2a
+  servername: sun9-37.userapi.com
+  client-fingerprint: qq
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 2.27.203.38
+  server: 188.225.77.71
   port: 443
   udp: true
   type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  uuid: faf6b8af-e741-4ef5-b1e2-25a3f413cc8e
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: Xuy5y3WGJjkxyUtkhiY87dwndv4fuD45gO64TWnlThI
-    short-id: fd0cc2b3ac52deb8
-  servername: www.google.com
+  servername: spb2.b2ai.top
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
